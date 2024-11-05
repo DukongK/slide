@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>자동이미지 슬라이드</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/slide.js"></script>
+    </head>
+    <body>
+        <div class="slide">
+            <ul class="panel">
+                <!-- 4개를 보이기위해 첫번째 마지막 이미지는 같게 한다 -->
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <ul class="navi">
+                <li class="on"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="button">
+                <a href="#" class="prev"
+                    ><i class="fa-solid fa-arrow-left"></i
+                ></a>
+                <a href="#" class="next"
+                    ><i class="fa-solid fa-arrow-right"></i
+                ></a>
+            </div>
+        </div>
+    </body>
+</html>

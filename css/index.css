@@ -1,0 +1,112 @@
+/* slide */
+/* 400x300 */
+/* 0 , -400 , -800 , -1200 */
+
+.slide {
+    /* border: 1px solid #222;
+    position: absolute;
+    left: 500px;
+    top: 20px;
+    height: 300px; */
+    /* overflow: hidden; */
+    width: 500px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+/* panel */
+.panel {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    /* 이미지가 줄어들지 않게 하기 위해서 */
+    /* width:400%;
+    height:100%; */
+}
+
+.panel li {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+}
+.panel li:nth-child(1) {
+    background-image: url(../img/p1.jpg);
+    /* display: block; */
+    border: 1px solid green;
+}
+.panel li:nth-child(2) {
+    background-image: url(../img/p2.jpg);
+}
+.panel li:nth-child(3) {
+    background-image: url(../img/p3.jpg);
+}
+.panel li:nth-child(4) {
+    background-image: url(../img/p4.jpg);
+}
+
+.panel li:nth-child(5) {
+    background-image: url(../img/p1.jpg);
+
+    border: 1px solid palevioletred;
+}
+
+/* navi */
+.navi {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    /* background-color: #999; */
+    /* height: 30px; */
+    /* position: absolute; */
+    display: flex;
+    gap: 10px;
+    width: 500px;
+    justify-content: center;
+    /* left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, -50%); */
+}
+.navi li {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 5px;
+}
+.navi li.on {
+    background-color: red;
+}
+
+/* prev , next button */
+.button {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.prev {
+    background-color: seagreen;
+    width: 30px;
+    height: 30px;
+}
+.next {
+    background-color: red;
+    width: 30px;
+    height: 30px;
+}
+
+i {
+    font-size: 30px;
+    color: #fff;
+}
